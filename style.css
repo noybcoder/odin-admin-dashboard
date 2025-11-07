@@ -1,0 +1,14 @@
+aside {
+    background-color: #438FD4;
+}
+
+section > img {
+    width: 30px;
+    height: 30px;
+}
+
+nav img {
+    width: 15px;
+    height: 15px;
+
+}
