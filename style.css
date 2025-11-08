@@ -3,8 +3,7 @@
     margin: 0;
 }
 
-
-header {
+header, .project-card {
     background-color: #FFFFFF;
 }
 
@@ -16,7 +15,7 @@ aside {
     background-color: #438FD4;
 }
 
-section > img {
+section img {
     width: 30px;
     height: 30px;
 }
@@ -27,8 +26,13 @@ nav img {
 
 }
 
-.avatar {
+.avatar, section img {
     width: 35px;
     height: 35px;
     border-radius: 50%; 
+}
+
+.project.action > img {
+    width: 25px;
+    height: 25px;
 }

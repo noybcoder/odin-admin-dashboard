@@ -9,21 +9,21 @@
 </head>
 <body>
     <header>
-        <div>
-            <img src=".\assets\search.png" alt="A search logo">
+        <div id="search">
+            <img src=".\assets\search.png" alt="A search logo" draggable="false">
             <input type="search" name="searchResult" placeholder="Search">
         </div>
-        <div>
-            <img src=".\assets\notification.png" alt="A notification log">
-            <img class="avatar" src=".\assets\astronaut.jpg" alt="A astronaut log">
+        <div id="profile">
+            <img src=".\assets\notification.png" alt="A notification log" draggable="false">
+            <img class="avatar" src=".\assets\astronaut.jpg" alt="A astronaut log" draggable="false">
             <p>Preston Lam</p>
         </div>
-        <div>
-            <img class="avatar" src=".\assets\astronaut.jpg" alt="A astronaut log">
+        <div id="greeting">
+            <img class="avatar" src=".\assets\astronaut.jpg" alt="A astronaut log" draggable="false">
             <p>Hi there,</p>
             <p>Preston Lam (@Preston)</p>
         </div>
-        <div>
+        <div id="action">
             <button type="button">New</button>
             <button type="button">Upload</button>
             <button type="button">Share</button>
@@ -32,53 +32,197 @@
     <main>
         <section id="projects">
             <p>Your Projects</p>
-            <div class="card-container">
-                <div>
+            <div class="project-container">
+                <div class="project-card">
+                    <div class="project summary">
+                        <p class="project-title">Super Cool Project</p>
+                        <p class="project-description">
+                            Sed tempus ut lacus ut scelerisque. 
+                            Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.
+                        </p>
+                    </div>
+                    <div class="project action">
+                        <img src=".\assets\star.svg" alt="A star logo" draggable="false">
+                        <img src=".\assets\eye.svg" alt="An eye logo" draggable="false">
+                        <img src=".\assets\branch.svg" alt="A branch logo" draggable="false">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project summary">
+                        <p class="project-title">Less Cool Project</p>
+                        <p class="project-description">
+                            Nullam condimentum ipsum ut lectus vehicula consectetur.
+                            Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor.
+                            Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.
+                        </p>
+                    </div>
+                    <div class="project action">
+                        <img src=".\assets\star.svg" alt="A star logo" draggable="false">
+                        <img src=".\assets\eye.svg" alt="An eye logo" draggable="false">
+                        <img src=".\assets\branch.svg" alt="A branch logo" draggable="false">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project summary">
+                        <p class="project-title">Impossible App</p>
+                        <p class="project-description">
+                            In hac habitasse platea dictumst. Vivamus dictum rutrum arcu,
+                            a placerat velit sagittis id.
+                        </p>
+                    </div>
+                    <div class="project action">
+                        <img src=".\assets\star.svg" alt="A star logo" draggable="false">
+                        <img src=".\assets\eye.svg" alt="An eye logo" draggable="false">
+                        <img src=".\assets\branch.svg" alt="A branch logo" draggable="false">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project summary">
+                        <p class="project-title">Easy Peasy App</p>
+                        <p class="project-description">
+                            Etiam cursus eros ac efficitur fringilla. 
+                            Vestibulum dignissim urna eget accumsan aliuqam. 
+                            Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.
+                        </p>
+                    </div>
+                    <div class="project action">
+                        <img src=".\assets\star.svg" alt="A star logo" draggable="false">
+                        <img src=".\assets\eye.svg" alt="An eye logo" draggable="false">
+                        <img src=".\assets\branch.svg" alt="A branch logo" draggable="false">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project summary">
+                        <p class="project-title">Ad Blocker</p>
+                        <p class="project-description">
+                            Quisque eget rutrum nist. Nam augue justo, cursus vitae metus vel,
+                            pharetra hendrerit fells. Aliquam sed malesuada eros.
+                        </p>
+                    </div>
+                    <div class="project action">
+                        <img src=".\assets\star.svg" alt="A star logo" draggable="false">
+                        <img src=".\assets\eye.svg" alt="An eye logo" draggable="false">
+                        <img src=".\assets\branch.svg" alt="A branch logo" draggable="false">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project summary">
+                        <p class="project-title">Money Maker</p>
+                        <p class="project-description">
+                            Praesent convallis, libero quis congue elementum, 
+                            nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex.
+                            Pallentesque mollis nec sem vel aliquam.
+                        </p>
+                    </div>
+                    <div class="project action">
+                        <img src=".\assets\star.svg" alt="A star logo" draggable="false">
+                        <img src=".\assets\eye.svg" alt="An eye logo" draggable="false">
+                        <img src=".\assets\branch.svg" alt="A branch logo" draggable="false">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="announcements">
+            <p>Announcements</p>
+            <div class="announcement-container">
+                <div class="announcement-card">
+                    <p class="announcement-title">Site Maintenance</p>
+                    <p class="announcement-description">
+                        Vestibulum condimentum tellus lacus, in a accumsan elit maximus ac. 
+                        Donec hendrerit sodales congue...
+                    </p>
+                </div>
+                <div class="announcement-card">
+                    <p class="announcement-title">Community Share Day</p>
+                    <p class="announcement-description">
+                        Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. 
+                        Aliquam dictum accumsan porttitor...
+                    </p>
+                </div>
+                <div class="announcement-card">
+                    <p class="announcement-title">Updated Privacy Policy</p>
+                    <p class="announcement-description">
+                        Phasellus efficitur nisi eget elit consectetur, 
+                        eget condimentum ante auctor. Cras fringilla sagittis sem in mattis.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="trending">
+            <p>Trending</p>
+            <div class="trending-container">
+                <div class="trending-card">
+                    <img src=".\assets\skateboard.jpg" alt="A skateboard logo">
+                    <div class="snapshot">
+                        <p>@tegan</p>
+                        <p>World Peace Builder</p>
+                    </div>
+                </div>
+                <div class="trending-card">
+                    <img src=".\assets\astronaut.jpg" alt="An astronaut logo">
+                    <div class="snapshot">
+                        <p>@preston</p>
+                        <p>Super Cool Project</p>
+                    </div>
+                </div>
+                <div class="trending-card">
+                    <img src=".\assets\cake.jpg" alt="A cake logo">
+                    <div class="snapshot">
+                        <p>@kendall</p>
+                        <p>Life Changing App</p>
+                    </div>
+                </div>
+                <div class="trending-card">
+                    <img src=".\assets\dog.jpg" alt="A dog logo">
+                    <div class="snapshot">
+                        <p>@alex</p>
+                        <p>No Traffic Maker</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <aside>
-        <div>
-            <img src=".\assets\dashboard.png" alt="A dashboard logo">
+        <div id="dashboard">
+            <img src=".\assets\dashboard.png" alt="A dashboard logo" draggable="false">
             <p>Dashboard</p>
         </div>
         <nav>
-            <ul>
-                <li>
-                    <img src=".\assets\home.png" alt="A home logo">
+            <ul class="nav-container">
+                <li class="nav-item">
+                    <img src=".\assets\home.png" alt="A home logo" draggable="false">
                     <a href="">Home</a>
                 </li>
-                <li>
-                    <img src=".\assets\profile.png" alt="A profile logo">
+                <li class="nav-item">
+                    <img src=".\assets\profile.png" alt="A profile logo" draggable="false">
                     <a href="">Profile</a>
                 </li>
-                <li>
-                    <img src=".\assets\messages.png" alt="A message logo">
+                <li class="nav-item">
+                    <img src=".\assets\messages.png" alt="A message logo" draggable="false">
                     <a href="">Messages</a>
                 </li>
-                <li>
-                    <img src=".\assets\history.png" alt="A history logo">
+                <li class="nav-item">
+                    <img src=".\assets\history.png" alt="A history logo" draggable="false">
                     <a href="">History</a>
                 </li>
-                <li>
-                    <img src=".\assets\tasks.png" alt="A task logo">
+                <li class="nav-item">
+                    <img src=".\assets\tasks.png" alt="A task logo" draggable="false">
                     <a href="">Tasks</a>
                 </li>
-                <li>
-                    <img src=".\assets\communities.png" alt="A community logo">
+                <li class="nav-item">
+                    <img src=".\assets\communities.png" alt="A community logo" draggable="false">
                     <a href="">Communities</a>
                 </li>
-                <li>
-                    <img src=".\assets\settings.png" alt="A setting logo">
+                <li class="nav-item">
+                    <img src=".\assets\settings.png" alt="A setting logo" draggable="false">
                     <a href="">Settings</a>
                 </li>
-                <li>
-                    <img src=".\assets\support.png" alt="A support logo">
+                <li class="nav-item">
+                    <img src=".\assets\support.png" alt="A support logo" draggable="false">
                     <a href="">Support</a>
                 </li>
-                <li>
-                    <img src=".\assets\privacy.png" alt="A privacy logo">
+                <li class="nav-item">
+                    <img src=".\assets\privacy.png" alt="A privacy logo" draggable="false">
                     <a href="">Privacy</a>
                 </li>
             </ul>
