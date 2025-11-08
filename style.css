@@ -3,6 +3,15 @@
     margin: 0;
 }
 
+
+header {
+    background-color: #FFFFFF;
+}
+
+main {
+    background-color: #E3E8F0;
+}
+
 aside {
     background-color: #438FD4;
 }
@@ -16,4 +25,10 @@ nav img {
     width: 20px;
     height: 20px;
 
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; 
 }
