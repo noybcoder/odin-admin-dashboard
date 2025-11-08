@@ -3,16 +3,25 @@
     margin: 0;
 }
 
-header, .project-card {
+body {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+header {
     background-color: #FFFFFF;
+    grid-column: 2 / -1;
 }
 
 main {
     background-color: #E3E8F0;
+    grid-column: 2 / -1;
 }
 
 aside {
     background-color: #438FD4;
+    grid-column: 1 / 2;   
+    grid-row: 1 / 3;
 }
 
 section img {
