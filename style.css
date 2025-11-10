@@ -1,35 +1,97 @@
+@font-face {
+    font-family: "Roboto";
+    src: 
+        url(fonts/Roboto-VariableFont_wdth,wght.ttf) format('truetype'),
+        url(fonts/Roboto-Italic-VariableFont_wdth,wght.ttf) format('truetype')
+}
+
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto';
 }
 
 #dashboard {
     display: grid;
     grid-template-columns: min-content min-content;
+    gap: 10px;
+    padding: 10px;
+    align-self: start;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    > img {
+        width: 32px;
+        height: 32px;
+    }
+
+    > p {
+        align-self: center;
+    }
 }
-
-#dashboard, ul {
-    border: 2px solid red;
-}
-
-
 
 .nav-item {
+    display: grid;
+    grid-template-columns: min-content auto;
+    gap: 15px;
+    padding: 5px 15px;
+    font-size: 1.1rem;
     list-style-type: none;
+    > img {
+        width: 20px;
+        height: 20px;
+    }
     > a { 
         text-decoration: none;
         color: #FFFFFF;
     }
+    > a:hover {
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5)
+    }
 }
+
+#search {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+
+    /* > img {
+        border: 2px solid red;
+    } */
+
+    > input {
+        background-color: #E3E8F0;
+        outline: none;
+        border: 2px solid red;
+        border-radius: 15px;
+        text-indent: 10px;
+        align-self: start;
+        padding: 7px;
+    }
+}
+
+#search > img:nth-child(1), #profile > img:nth-child(1) {
+    width: 20px;
+    height: 20px;
+}
+
 
 body {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 5fr;
 }
 
 header {
     background-color: #FFFFFF;
     grid-column: 2 / -1;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+#profile {
+    display: grid;
+    grid-template-columns: repeat(2, min-content) auto;
 }
 
 main {
@@ -45,17 +107,6 @@ aside {
 
     display: grid;
     grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
-}
-
-section img {
-    width: 30px;
-    height: 30px;
-}
-
-nav img {
-    width: 20px;
-    height: 20px;
-
 }
 
 .avatar, section img {
