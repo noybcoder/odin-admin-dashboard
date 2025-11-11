@@ -69,20 +69,44 @@
 #profile {
     display: grid;
     grid-template-columns: repeat(2, min-content) auto;
-
-    justify-content: end;
+    gap: 20px;
     align-items: center;
+    justify-self: end;
+    font-weight: bold;
+
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+
 }
 
 #greeting {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: min-content 1fr;
+
+    > img {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+
+    }
 }
 
 
 #action {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: end;
+
+    > button {
+        background-color: #438FD4;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 50px;
+    }
 }
 
 #search > img:nth-child(1), #profile > img:nth-child(1) {
@@ -97,15 +121,13 @@ body {
 }
 
 header {
-    background-color: #FFFFFF;
     grid-column: 2 / -1;
-
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 20px;
+    background-color: #FFFFFF;
+
 }
-
-
 
 main {
     background-color: #E3E8F0;
@@ -122,7 +144,7 @@ aside {
     grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
 }
 
-.avatar, section img {
+section img {
     width: 35px;
     height: 35px;
     border-radius: 50%; 
