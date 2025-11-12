@@ -196,10 +196,18 @@ main {
     .announcement-description {
         color: #757575;
     }
-
-
 }
 
+#trending {
+
+    > .trending-container {
+        background-color: #FFFFFF;
+    }
+    .trending-card {
+        display: grid;
+        grid-template-columns: min-content auto;
+    }
+}
 
 aside {
     background-color: #438FD4;
