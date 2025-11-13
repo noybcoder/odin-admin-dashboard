@@ -21,8 +21,7 @@
 aside {
     background-color: var(--navigation-button-color);
     color: #FFFFFF;
-    grid-column: 1 / 2;   
-    grid-row: 1 / 7;
+    grid-area: 1 / 1 / 7 / 2;
     display: grid;
     grid-template-rows: repeat(auto-fill, minmax(6.2em, 1fr));
 }
@@ -167,8 +166,7 @@ header {
 
 main {
     background-color: var(--project-background-color);
-    grid-row: 2 / 7;
-    grid-column: 2 / -1;
+    grid-area: 2 / 2 / 7 / -1;
     display: grid;
     grid-template-columns: auto 18em;
     padding: 1.5em 0.5em 0;
