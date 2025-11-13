@@ -5,6 +5,13 @@
         url(fonts/Roboto-Italic-VariableFont_wdth,wght.ttf) format('truetype')
 }
 
+:root {
+    --box-shadow-setup: 0.1em 0.2em 0.2em rgb(0, 0, 0, 0.1);
+    --description-text-color: #757575;
+    --navigation-button-color: #438FD4;
+    --project-background-color: #E3E8F0;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -12,7 +19,7 @@
 }
 
 aside {
-    background-color: #438FD4;
+    background-color: var(--navigation-button-color);
     color: #FFFFFF;
     grid-column: 1 / 2;   
     grid-row: 1 / 7;
@@ -59,7 +66,8 @@ aside {
     }
     
     > a:hover {
-        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5)
+        font-size: 1.3em;
+        font-weight: bold;
     }
 }
 
@@ -70,7 +78,7 @@ aside {
     align-items: center;
 
     > input {
-        background-color: #E3E8F0;
+        background-color: var(--project-background-color);
         outline: none;
         border: none;
         border-radius: 1.5em;
@@ -133,7 +141,7 @@ aside {
     gap: 2em;
 
     > button {
-        background-color: #438FD4;
+        background-color: var(--navigation-button-color);
         color: #FFFFFF;
         border: none;
         border-radius: 1.5em;
@@ -155,11 +163,10 @@ header {
     background-color: #FFFFFF;
     padding: 1.5em 2em;
     align-content: center;
-
 }
 
 main {
-    background-color: #E3E8F0;
+    background-color: var(--project-background-color);
     grid-row: 2 / 7;
     grid-column: 2 / -1;
     display: grid;
@@ -193,11 +200,12 @@ main {
         display: grid;
         gap: 0.6em;
         align-content: space-between;
+        box-shadow: var(--box-shadow-setup);
     }
 
     .project-description {
         font-size: 0.9rem;
-        color: #757575;
+        color: var(--description-text-color);
     }
 
     .project-action {
@@ -227,6 +235,7 @@ main {
     > .announcement-container {
         border-radius: 0.5em;
         background-color: #FFFFFF;
+        box-shadow: var(--box-shadow-setup);
     }
 
     .announcement-card {
@@ -242,7 +251,7 @@ main {
         transform: translateX(-50%);
         width: 80%;
         height: 0.01em;
-        background-color: #757575;
+        background-color: var(--description-text-color);
     }
 
     .announcement-title {
@@ -251,7 +260,7 @@ main {
     }
 
     .announcement-description {
-        color: #757575;
+        color: var(--description-text-color);
         font-size: 0.7rem;
     }
 }
@@ -270,6 +279,7 @@ main {
         background-color: #FFFFFF;
         border-radius: 0.5em;
         padding: 0.6em 0;
+        box-shadow: var(--box-shadow-setup);
     }
     
     .trending-card {
@@ -292,6 +302,6 @@ main {
     }
 
     .snapshot > p:last-child {
-        color: #757575;
+        color: var(--description-text-color);
     }
 }
