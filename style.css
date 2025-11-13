@@ -16,7 +16,6 @@ aside {
     color: #FFFFFF;
     grid-column: 1 / 2;   
     grid-row: 1 / 7;
-
     display: grid;
     grid-template-rows: repeat(auto-fill, minmax(6.2em, 1fr));
 }
@@ -211,7 +210,6 @@ main {
         width: 1.3em;
         height: 1.3em;
     }
-
 }
 
 #announcements {
@@ -233,7 +231,6 @@ main {
     .announcement-card {
         position: relative;
         padding: 1.2em 1.5em;
-
     }
 
     .announcement-card:not(:last-of-type)::after {
@@ -272,8 +269,8 @@ main {
         background-color: #FFFFFF;
         border-radius: 0.5em;
         padding: 0.6em 0;
-
     }
+    
     .trending-card {
         display: grid;
         grid-template-columns: min-content auto;
@@ -297,4 +294,3 @@ main {
         color: #757575;
     }
 }
-
