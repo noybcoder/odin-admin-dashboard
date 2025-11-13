@@ -18,21 +18,21 @@ aside {
     grid-row: 1 / 7;
 
     display: grid;
-    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(6.2em, 1fr));
 }
 
 #dashboard {
     display: grid;
     grid-template-columns: repeat(2, min-content);
-    gap: 10px;
-    padding: 35px 30px;
+    gap: 0.4em;
+    padding: 1.5em 1.2em;
     align-self: start;
     font-size: 1.5rem;
     font-weight: bold;
 
     > img {
-        width: 35px;
-        height: 35px;
+        width: 1.6em;
+        height: 1.6em;
     }
 
     > p {
@@ -43,18 +43,22 @@ aside {
 .nav-item {
     display: grid;
     grid-template-columns: repeat(2, min-content);
-    gap: 15px;
-    padding: 8px 40px;
+    gap: 1em;
+    padding: 0.5em 2.3em;
     font-size: 1.1rem;
     list-style-type: none;
+    align-items: center;
+
     > img {
-        width: 20px;
-        height: 20px;
+        width: 1.4em;
+        height: 1.4em;
     }
+
     > a { 
         text-decoration: none;
         color: #FFFFFF;
     }
+    
     > a:hover {
         text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5)
     }
@@ -63,35 +67,40 @@ aside {
 #search {
     display: grid;
     grid-template-columns: min-content 1fr;
-    gap: 15px;
+    gap: 1em;
     align-items: center;
 
     > input {
         background-color: #E3E8F0;
         outline: none;
         border: none;
-        border-radius: 15px;
-        text-indent: 10px;
-        padding: 7px;
+        border-radius: 1.5em;
+        text-indent: 1em;
+        padding: 0.6em;
+    }
+
+    > img:nth-child(1) {
+        width: 1.4em;
+        height: 1.4em;
     }
 }
 
 #profile {
     display: grid;
     grid-template-columns: repeat(2, min-content) auto;
-    gap: 20px;
+    gap: 1.8em;
     align-items: center;
     justify-self: end;
     font-weight: bold;
 
     > img:first-child {
-        width: 18px;
-        height: 18px;
+        width: 1.5em;
+        height: 1.5em;
     }
 
     > .avatar {
-        width: 35px;
-        height: 35px;
+        width: 3em;
+        height: 3em;
         border-radius: 50%;
     }
 }
@@ -100,11 +109,11 @@ aside {
     display: grid;
     grid-template-columns: min-content 1fr;
     align-items: center;
-    gap: 15px;
+    gap: 1em;
 
     > img {
-        width: 50px;
-        height: 50px;
+        width: 3.5em;
+        height: 3.5em;
         border-radius: 50%;
     }
 
@@ -128,16 +137,10 @@ aside {
         background-color: #438FD4;
         color: #FFFFFF;
         border: none;
-        border-radius: 1rem;
-        padding: 0.6rem 0;
+        border-radius: 1.5em;
+        padding: 0.7em 0;
     }
 }
-
-#search > img:nth-child(1) {
-    width: 20px;
-    height: 20px;
-}
-
 
 body {
     display: grid;
@@ -149,9 +152,9 @@ header {
     grid-column: 2 / -1;
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, 1fr));
-    gap: 25px;
+    gap: 1.5em;
     background-color: #FFFFFF;
-    padding: 10px 30px;
+    padding: 1.5em 2em;
     align-content: center;
 
 }
@@ -161,15 +164,15 @@ main {
     grid-row: 2 / 7;
     grid-column: 2 / -1;
     display: grid;
-    grid-template-columns: auto 300px;
-    padding: 25px;
+    grid-template-columns: auto 18em;
+    padding: 1.5em;
 }
 
 #projects {
     grid-row: 1 / 7;
     display: grid;
-    gap: 10px;
-    align-self: center;
+    gap: 0.7em;
+    align-self: start;
 
     > p, .project-title {
         font-size: 1.2rem;
@@ -178,15 +181,15 @@ main {
 
     > .project-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
         gap: 1.9em;
     }
 
     .project-card {
         background-color: #FFFFFF;
-        border-left: 0.5rem solid #E8B62D;
-        border-radius: 0.5rem;
-        padding: 2.5em;
+        border-left: 0.5em solid #E8B62D;
+        border-radius: 0.5em;
+        padding: 2em;
         display: grid;
         gap: 0.6em;
         align-content: space-between;
@@ -200,35 +203,36 @@ main {
     .project-action {
         display: grid;
         grid-template-columns: repeat(3, min-content);
+        gap: 1.2em;
         justify-content: end;
     }
 
     .project-action > img {
-        width: 25px;
-        height: 25px;
+        width: 1.3em;
+        height: 1.3em;
     }
 
 }
 
 #announcements {
-    padding: 25px;
+    padding: 0 1.5em;
     display: grid;
-    gap: 10px;
+    gap: 0.6em;
 
     > p:first-child {
-        font-size: 1.2rem;
+        font-size: 1.2em;
         font-weight: bold;
         align-self: center;
     }
 
     > .announcement-container {
-        border-radius: 0.5rem;
+        border-radius: 0.5em;
         background-color: #FFFFFF;
     }
 
     .announcement-card {
         position: relative;
-        padding: 18px 25px;
+        padding: 1.2em 1.5em;
 
     }
 
@@ -239,7 +243,7 @@ main {
         left: 50%;
         transform: translateX(-50%);
         width: 80%;
-        height: 1px;
+        height: 0.01em;
         background-color: #757575;
     }
 
@@ -255,9 +259,9 @@ main {
 }
 
 #trending {
-    padding: 25px;
+    padding: 1.5em;
     display: grid;
-    gap: 10px;
+    gap: 0.6em;
 
     > p {
         font-size: 1.2rem;
@@ -266,33 +270,31 @@ main {
 
     > .trending-container {
         background-color: #FFFFFF;
-        border-radius: 0.5rem;
-        padding: 10px 0;
+        border-radius: 0.5em;
+        padding: 0.6em 0;
 
     }
     .trending-card {
         display: grid;
         grid-template-columns: min-content auto;
-        gap: 20px;
+        gap: 1.2em;
+        align-items: center;
         font-size: 0.9rem;
-        padding: 10px 15px;
+        padding: 0.7em 1em;
     }
 
     .trending-card > img {
-        width: 40px;
-        height: 40px;
+        width: 3em;
+        height: 3em;
         border-radius: 50%; 
-
     }
 
      .snapshot > p:first-child {
         font-weight: bold;
-
     }
 
     .snapshot > p:last-child {
         color: #757575;
-
     }
 }
 
