@@ -164,7 +164,7 @@ main {
     grid-column: 2 / -1;
     display: grid;
     grid-template-columns: auto 18em;
-    padding: 1.5em;
+    padding: 1.5em 0.5em 0;
 }
 
 #projects {
@@ -172,6 +172,7 @@ main {
     display: grid;
     gap: 0.7em;
     align-self: start;
+    padding-left: 1em;
 
     > p, .project-title {
         font-size: 1.2rem;
@@ -181,7 +182,7 @@ main {
     > .project-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
-        gap: 1.9em;
+        gap: 1.8em;
     }
 
     .project-card {
